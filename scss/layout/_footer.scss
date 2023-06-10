@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as mix;
+
+footer,
+footer .container {
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
