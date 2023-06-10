@@ -1,26 +1,26 @@
 {
-  "name": "fmentor-stats-preview-bulma",
-  "version": "1.0.0",
-  "description": "stats preview project with bulma",
-  "main": "index.js",
-  "scripts": {
-    "dev": "sass --watch scss/main.scss css/main.css",
-    "build": "sass scss/main.scss css/main.css",
-    "lint": "prettier --write ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/al3xback/fmentor-stats-preview-bulma.git"
-  },
-  "author": "alex <al3xback@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/al3xback/fmentor-stats-preview-bulma/issues"
-  },
-  "homepage": "https://github.com/al3xback/fmentor-stats-preview-bulma#readme",
-  "devDependencies": {
-    "bulma": "^0.9.4",
-    "prettier": "^2.8.8",
-    "sass": "^1.62.1"
-  }
+	"name": "fmentor-stats-preview-bulma",
+	"version": "1.0.0",
+	"description": "stats preview project with bulma",
+	"main": "index.js",
+	"scripts": {
+		"dev": "sass --watch scss/main.scss css/main.css",
+		"build": "sass scss/main.scss css/main.css",
+		"lint": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/al3xback/fmentor-stats-preview-bulma.git"
+	},
+	"author": "alex <al3xback@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/al3xback/fmentor-stats-preview-bulma/issues"
+	},
+	"homepage": "https://github.com/al3xback/fmentor-stats-preview-bulma#readme",
+	"devDependencies": {
+		"bulma": "^0.9.4",
+		"prettier": "^2.8.8",
+		"sass": "^1.62.1"
+	}
 }
