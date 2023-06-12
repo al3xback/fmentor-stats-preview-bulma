@@ -25,6 +25,7 @@ html {
 	object-position: top;
 	mix-blend-mode: multiply;
 	opacity: 0.75;
+	@include mix.border-radius(0);
 }
 
 .card--custom .card-content {

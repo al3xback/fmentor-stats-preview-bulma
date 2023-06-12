@@ -10313,6 +10313,9 @@ html {
   object-position: top;
   mix-blend-mode: multiply;
   opacity: 0.75;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 .card--custom .card-content {
