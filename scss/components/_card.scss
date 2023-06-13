@@ -1,0 +1,89 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mixins' as mix;
+
+.card {
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+	width: 100%;
+	margin: func.em(40, var.$font-size-primary) 0
+		func.em(60, var.$font-size-primary);
+	overflow: hidden;
+}
+
+.card-image .image {
+	background-color: var.$color-soft-violet;
+}
+
+.card-image .image img {
+	object-fit: cover;
+	object-position: top;
+	mix-blend-mode: multiply;
+	opacity: 0.75;
+}
+
+.card-content {
+	text-align: center;
+}
+
+.list,
+.list-item {
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+}
+
+.list {
+	gap: func.em(30, var.$font-size-primary);
+}
+
+.list-item {
+	gap: func.em(8, 12);
+	font-size: func.em(12, var.$font-size-primary);
+	text-transform: uppercase;
+}
+
+.list-item .num {
+	font-size: func.em(20, 12);
+	font-weight: var.$font-weight-700;
+	color: var.$color-white;
+}
+
+.list-item .label {
+	font-size: inherit;
+	font-weight: var.$font-weight-400;
+	color: inherit;
+	letter-spacing: func.em(1, var.$font-size-primary);
+}
+
+@media (min-width: 65em) {
+	.card {
+		@include mix.flex-direction(row-reverse);
+	}
+
+	.card-image,
+	.card-content {
+		@include mix.flexbox;
+		@include mix.flex-direction(column);
+		@include mix.flex(none);
+		width: 50%;
+	}
+
+	.card-content {
+		text-align: left;
+	}
+
+	.card-image .image {
+		@include mix.flex(auto);
+		height: auto;
+		padding-top: 0;
+	}
+
+	.list {
+		@include mix.flex-direction(row);
+		gap: func.em(30, var.$font-size-primary);
+	}
+
+	.list-item {
+		min-width: func.em(112, 12);
+	}
+}

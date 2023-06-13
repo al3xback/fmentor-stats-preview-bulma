@@ -2,10 +2,24 @@
 @use '../abstracts/functions' as func;
 
 @forward '../../node_modules/bulma/bulma.sass' with (
+	$body-background-color: var.$color-dark-blue,
+	$body-overflow-x: visible,
+	$body-overflow-y: visible,
+	$body-family: var.$font-family-primary,
+	$body-font-size: func.em(var.$font-size-primary),
+	$body-weight: var.$font-weight-400,
+	$body-line-height: 1.25,
+	$body-color: var.$color-white-lighter,
 	$card-color: inherit,
 	$card-background-color: var.$color-dark-desaturated-blue,
 	$card-radius: 8px,
 	$card-shadow: none,
+	$card-content-padding: func.em(40, var.$font-size-primary)
+		func.em(24, var.$font-size-primary),
+	$title-color: var.$color-white,
+	$title-size: func.em(26, var.$font-size-primary),
+	$title-weight: var.$font-weight-700,
+	$title-line-height: 1.25,
 	$footer-padding: 0.75rem 0,
 	$footer-background-color: transparent
 );

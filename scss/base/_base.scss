@@ -6,17 +6,19 @@
 body {
 	position: relative;
 	@include mix.flexbox;
-	background-color: var.$color-dark-blue;
-	font-family: var.$font-family-primary;
 	-webkit-font-smoothing: antialiased;
-	font-size: func.em(var.$font-size-primary);
-	font-weight: var.$font-weight-400;
-	color: var.$color-white-lighter;
-	line-height: 1.25;
 }
 
 ul,
 ol {
 	margin: 0;
 	padding: 0;
+}
+
+.link {
+	color: var.$color-white-light;
+}
+
+.link:hover {
+	color: var.$color-white-light;
 }
