@@ -337,7 +337,7 @@ body {
   color: hsla(0, 0%, 100%, 0.6);
   font-size: 0.9375em;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.7333333333;
 }
 
 a {
@@ -10428,7 +10428,6 @@ h6 {
 
 p {
   font-size: 1em;
-  line-height: 1.7333333333;
 }
 
 strong {
@@ -10518,7 +10517,7 @@ ol {
 }
 
 .list-item {
-  gap: 0.6666666667em;
+  gap: 0.1666666667em;
   font-size: 0.8em;
   text-transform: uppercase;
 }
@@ -10587,7 +10586,6 @@ ol {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    gap: 2em;
   }
   .list-item {
     min-width: 9.3333333333em;
