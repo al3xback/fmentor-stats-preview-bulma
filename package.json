@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-stats-preview-bulma",
 	"version": "1.0.0",
-	"description": "stats preview project with bulma",
+	"description": "stats preview project using bulma",
 	"main": "index.js",
 	"scripts": {
 		"dev": "sass --watch scss/main.scss css/main.css",
