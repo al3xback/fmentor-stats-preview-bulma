@@ -27,7 +27,8 @@
 		max-width: func.em(1110, var.$font-size-primary);
 	}
 
-	.card-image:first-child img {
+	.card-image .image,
+	.card-image .image img {
 		position: static;
 	}
 
