@@ -27,6 +27,10 @@
 		max-width: func.em(1110, var.$font-size-primary);
 	}
 
+	.card-image:first-child img {
+		position: static;
+	}
+
 	.card-content {
 		padding: func.em(70, var.$font-size-primary);
 	}

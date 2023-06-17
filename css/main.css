@@ -10309,6 +10309,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .card {
     max-width: 74em;
   }
+  .card-image:first-child img {
+    position: static;
+  }
   .card-content {
     padding: 4.6666666667em;
   }
