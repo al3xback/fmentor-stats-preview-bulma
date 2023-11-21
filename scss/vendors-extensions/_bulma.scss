@@ -7,11 +7,11 @@
 }
 
 .card-image:first-child img {
-	@include mix.border-radius(0);
+	border-radius: 0;
 }
 
 .card-content:last-child {
-	@include mix.border-radius(0);
+	border-radius: 0;
 }
 
 .title:not(:last-child) {

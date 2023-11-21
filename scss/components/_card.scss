@@ -3,8 +3,8 @@
 @use '../abstracts/mixins' as mix;
 
 .card {
-	@include mix.flexbox;
-	@include mix.flex-direction(column);
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
@@ -28,8 +28,8 @@
 
 .list,
 .list-item {
-	@include mix.flexbox;
-	@include mix.flex-direction(column);
+	display: flex;
+	flex-direction: column;
 }
 
 .list {
@@ -57,14 +57,14 @@
 
 @media (min-width: 65em) {
 	.card {
-		@include mix.flex-direction(row-reverse);
+		flex-direction: row-reverse;
 	}
 
 	.card-image,
 	.card-content {
-		@include mix.flexbox;
-		@include mix.flex-direction(column);
-		@include mix.flex(none);
+		display: flex;
+		flex-direction: column;
+		flex: none;
 		width: 50%;
 	}
 
@@ -73,13 +73,13 @@
 	}
 
 	.card-image .image {
-		@include mix.flex(auto);
+		flex: auto;
 		height: auto;
 		padding-top: 0;
 	}
 
 	.list {
-		@include mix.flex-direction(row);
+		flex-direction: row;
 	}
 
 	.list-item {

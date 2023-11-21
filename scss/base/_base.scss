@@ -3,7 +3,7 @@
 
 body {
 	position: relative;
-	@include mix.flexbox;
+	display: flex;
 	-webkit-font-smoothing: antialiased;
 }
 
